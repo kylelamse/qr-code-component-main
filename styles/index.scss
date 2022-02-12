@@ -1,0 +1,62 @@
+@import "colors";
+@import "breakpoints";
+@import "fonts";
+
+body,
+html {
+  background: $light_gray;
+  font-family: Outfit;
+  height: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $white;
+  padding: 0.75em;
+  border-radius: 0.75em;
+  height: 27em;
+  width: 16em;
+}
+
+@media (max-width: $mobile) {
+  .card-container {
+    justify-content: flex-start;
+    margin-top: 3em;
+  }
+
+  .card {
+    width: 19em;
+    height: 30em;
+  }
+}
+
+.qr-code {
+  max-width: 100%;
+  border-radius: 0.5em;
+}
+
+.title {
+  text-align: center;
+  font-weight: $heavy_weight;
+  color: $dark_blue;
+  font-size: 20.5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: $light_weight;
+  color: $grayish_blue;
+  font-size: 15px;
+}
