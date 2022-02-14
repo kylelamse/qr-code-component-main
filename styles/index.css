@@ -48,6 +48,7 @@ body {
   text-align: center;
   font-weight: var(--heavy_weight);
   margin-bottom: 1em;
+  font-size: 1.375em;
 }
 
 .subtitle {
