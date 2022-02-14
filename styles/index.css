@@ -13,6 +13,10 @@ body {
   font-family: Outfit;
 }
 
+*, :before, *:after {
+  box-sizing: border-box;
+}
+
 .card-container {
   display: grid;
   place-items: center;
@@ -23,8 +27,8 @@ body {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
-  width: 20em;
-  padding: 1em 1em 2.5em 1em;
+  width: 22em;
+  padding: 1em;
   border-radius: 1.25em;
 }
 
@@ -32,19 +36,21 @@ body {
   border-radius: 0.75em;
 }
 
+.text-container {
+  padding: 0 2em;
+  margin: 1.5em 0 2.5em 0;
+}
+
 .title {
-  padding: 0 1.25em;
   color: var(--dark_blue);
   text-align: center;
   font-weight: var(--heavy_weight);
-  margin: 1em 0 0 0;
+  margin-bottom: 1em;
 }
 
 .subtitle {
-  font-size: 1rem;
-  padding: 0 1.25em;
+  font-size: 0.938rem;
   color: var(--grayish_blue);
   text-align: center;
   font-weight: var(--light_weight);
-  margin: 1em 0 0 0;
 }
