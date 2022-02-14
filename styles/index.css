@@ -14,16 +14,9 @@ body {
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 20rem;
-  height: auto;
-  margin: 0 auto;
-  background-color: var(--white);
-  border-radius: 20px;
-  margin-top: 9.37em;
-  margin-bottom: 9.37em;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 .card {
